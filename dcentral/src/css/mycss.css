@@ -1,16 +1,74 @@
-div{
+/* div{
     border: 1px solid black;
 }
+p{
+    border: 1px solid black;
+} */
 .list_font{
     color: green;
 }
-
+ul>li>a{
+    font-weight: normal;
+    color: white;
+}
+ul>li>a:hover{
+    background-color: white;
+    color: black;
+}
 .back_ground{
     background-color: #F2F6FA;
 }
 .back_ground_sidebar{
     background-color: #2D2F48;
 }
-.sidebar_menu{
+.photo{
+    width:200px;
+    height:200px;
+}
+.photo2{
+    width:19vh;
+    height:18vh;
+    float :right;
+}
+.card_font{
+    color: chocolate;
+}
+.card_title{
+    font-weight: Bold;
+    letter-spacing: 0.48px;
+    color: #2D2F48;
+    font-family: 'Montserrat', sans-serif;
+}
+.card_text{
+    letter-spacing: 0.36px;
+    color: #2D2F48;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.card_link{
+text-align: left;
+text-decoration: underline;
+font: Bold 18px/22px Montserrat;
+letter-spacing: 0.36px;
+color: #34A853;
+opacity: 1;
+}
+.card_background{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+    opacity: 1;    
+}
 
+.header_background{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-top-left-radius: 41px;
+    border-top-right-radius: 41px;
+    opacity: 1;    
+}
+
+.central{
+    height: 25vh;
+   font-weight: bold;
 }
