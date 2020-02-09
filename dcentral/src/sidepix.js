@@ -3,7 +3,7 @@ import './css/mycss.css'
 import logo from './images/logo1.png'
 
 
-class Siderbar extends React.Component{
+class Sidepix extends React.Component{
     render(){
         return(
                 <React.Fragment>
