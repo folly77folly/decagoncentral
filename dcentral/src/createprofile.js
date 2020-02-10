@@ -1,20 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
-// import './App.css';
-import Sidepix from './sidebar';
-import Mainform from './main';
+import Sidepix from './sidepix';
+import Mainform from './mainform';
 import './css/mycss.css'
 
 function CreateProfile() {
   return (
-    <div className="App row back_ground container-fuild">
-
-      <div className = "col-6 back_ground_sidebar">
+    <div className="container">
+      <div className ='row'>
+      <div className = 'col-12 d-flex CreateProfile mt-5'>
+      <div className = "col-7 ">
         <Sidepix />      
       </div>
-      <div className = "col-6">
+      <div className = "col-5">
         <Mainform />      
-      </div>  
+      </div>          
+      </div>        
+      </div>
     </div>
     
   );

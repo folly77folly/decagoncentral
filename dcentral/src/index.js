@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Routers from './Router'
+import CreateProfile from './createprofile'
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
-// ReactDOM.render(<Siderbar />, document.getElementById('root'));
+ReactDOM.render(<Routers />, document.getElementById('root'));
+// ReactDOM.render(<CreateProfile />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
