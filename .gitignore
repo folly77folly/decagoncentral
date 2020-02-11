@@ -1,2 +1,8 @@
 
 /node_modules
+/venv
+api/.vscode/
+api/__pycache__/
+dcentralapi/__pycache__/
+db.sqlite3
+api/migrations/__pycache__/
