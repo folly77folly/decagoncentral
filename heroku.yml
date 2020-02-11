@@ -1,0 +1,8 @@
+setup:
+    addons:
+      - plan: mongolab:sandbox
+  build:
+    docker:
+      web: Dockerfile
+  run: 
+    web: gunicorn computerproject.wsgi:application 0.0.0.0:$PORT
