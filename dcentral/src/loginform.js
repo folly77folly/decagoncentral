@@ -9,29 +9,52 @@ import image5 from './images/Image5.png'
 
 
 class Loginform extends React.Component{
-    email = React.createRef()
-    password = React.createRef()
+
+    state = {
+        credentials : {
+            email:'',
+            password: ''
+        }
+    }
+    // myemail = React.createRef()
+    // mypassword = React.createRef()
 
     gotoDashboard = event => {
         event.preventDefault()
-        console.log('hi')
-        console.log(this.email)
-        console.log(this.password)
+        console.log('going to store')
+        console.log(this.myemail)
+        console.log(this.state.credentials)
     }
 
+    emailchanges = event =>{
+        const cred =this.state.credentials
+        cred[event.target.name] = event.target.value
+        this.setState({credentials:cred})
+    }
+    passwordchanges = event =>{
+        const cred =this.state.credentials
+        cred[event.target.name] = event.target.value
+        this.setState({credentials:cred})
+    }
+
+
+    // value = {this.state.credentials.email}
+    // value = {this.state.credentials.password} 
+    // onChange= {this.passwordchanges} 
+    // onChange= {this.emailchanges}
     render(){
         return(
             <React.Fragment>
                 <div className = 'col-12'>
                 <label className = 'font-weight-bolder'>Login</label>
-                <form onSubmit={this.gotoDashboard}>
+                <form onSubmit = {this.gotoDashboard} >
                 <div class="form-group">
                     <label for="inputemailAdd">Email Address:</label>
-                    <input type="email" ref = {this.email} className="form-control" />
+                    <input type="email" name = 'email' ref = {this.myemail} className="form-control" />
                 </div>                    
                 <div class="form-group">
                     <label for="inputPassword">Password:</label>
-                    <input type="password" ref = {this.password} className="form-control"/>
+                    <input type="password" name = 'password' ref = {this.mypassword} className="form-control"/>
                 </div>
                 <div className ='col-12 d-flex flex-wrap p-2'>
                 <div className ='col-lg-3 col-sm-12'><button type="submit" class="btn btn-success">Login</button></div>
