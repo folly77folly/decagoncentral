@@ -1,11 +1,6 @@
 import React from 'react'
 import './css/mycss.css'
-import chatlogo from './images/chat.png'
-import image1 from './images/Image2.png'
-import arrow from './images/arrow.png'
-import image3 from './images/Image3.png'
-import image4 from './images/Image4.png'
-import image5 from './images/Image5.png'
+
 
 
 class Mainsec extends React.Component{
@@ -45,8 +40,11 @@ class Mainsec extends React.Component{
                     <label for="inputPosition">Position</label>
                     <input type="text" class="form-control" id="inputPosition" />
                 </div>
-                <button type="submit" class="btn btn-success">Join Now</button>
-                <button type="submit" class="btn btn-success ml-3">Login</button>
+                <div className='d-flex flex-wrap'>
+                    <div className='col-4'><button type="submit" class="btn btn-success">Join Now</button></div>
+                    <div className= 'col-6'><a href={'/'} class="btn btn-success">Login</a></div>
+                </div>
+                
                 </form>
             </React.Fragment>
         )

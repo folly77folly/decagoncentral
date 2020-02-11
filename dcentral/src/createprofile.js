@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import Sidepix from './sidepix';
 import Mainform from './mainform';
 import './css/mycss.css'
