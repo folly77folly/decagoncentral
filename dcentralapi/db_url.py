@@ -12,5 +12,5 @@ def url_generator(DEBUG, url):
             "ENGINE": "djongo",
             "NAME": "dcentralapi",
             "HOST": "localhost",
-            "PORT":27017
+            "PORT": 27017
         }}
